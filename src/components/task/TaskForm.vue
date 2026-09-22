@@ -139,4 +139,3 @@ async function submit() {
     </form>
   </AppModal>
 </template>
-

@@ -17,4 +17,3 @@ const colorVar = computed(() => `var(--color-pri-${props.priority})`)
     <span v-if="showLabel">{{ label }}</span>
   </span>
 </template>
-

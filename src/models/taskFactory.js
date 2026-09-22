@@ -166,4 +166,3 @@ export function changeTaskStatus(tasks, id, nextStatus) {
     changed: true,
   }
 }
-

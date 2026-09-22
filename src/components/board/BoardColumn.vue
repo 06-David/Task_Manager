@@ -97,4 +97,3 @@ function onDragLeave(event) {
 .drop-before { box-shadow: 0 -3px 0 var(--color-accent); }
 .drop-after { box-shadow: 0 3px 0 var(--color-accent); }
 </style>
-

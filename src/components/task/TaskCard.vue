@@ -108,5 +108,3 @@ const displayTitle = computed(() => props.task.title || '(无标题)')
     </div>
   </article>
 </template>
-
-

@@ -164,4 +164,3 @@ describe('moveTask', () => {
     expect(result.tasks).toBe(tasks)
   })
 })
-

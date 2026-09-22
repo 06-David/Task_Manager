@@ -59,4 +59,3 @@ function onBackdrop() {
     </div>
   </div>
 </template>
-
