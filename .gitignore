@@ -1,0 +1,41 @@
+# 依赖与构建产物
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+
+# 缓存
+.vite/
+.cache/
+*.tsbuildinfo
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# 编辑器与系统文件
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/*
+!.vscode/extensions.json
+
+# 本地临时与沙箱产物
+.sandbox-tmp/
+tmp/
+*.tmp
