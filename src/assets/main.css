@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+/* Tailwind v4 深色模式：class 策略（FR-09 规则 5） */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-raised: #ffffff;
+  --color-line: #e2e8f0;
+  --color-ink: #0f172a;
+  --color-ink-muted: #64748b;
+  --color-accent: #4f46e5;
+  --color-accent-ink: #ffffff;
+
+  /* 优先级语义色（FR-06） */
+  --color-pri-high: #dc2626;
+  --color-pri-medium: #d97706;
+  --color-pri-low: #16a34a;
+  --color-danger: #dc2626;
+}
+
+html.dark {
+  --color-surface: #0b1120;
+  --color-surface-muted: #111827;
+  --color-surface-raised: #1e293b;
+  --color-line: #334155;
+  --color-ink: #e2e8f0;
+  --color-ink-muted: #94a3b8;
+  --color-accent: #818cf8;
+  --color-accent-ink: #0b1120;
+
+  --color-pri-high: #f87171;
+  --color-pri-medium: #fbbf24;
+  --color-pri-low: #4ade80;
+  --color-danger: #f87171;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-surface-muted);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>任务管理 · Task Manager</title>
+    <link rel="icon" href="data:," />
+    <script>
+      // FR-09 规则 6：首帧渲染前设置根元素主题，防 FOUC
+      ;(function () {
+        try {
+          var stored = window.localStorage.getItem('task-manager:prefs:v1')
+          var theme = null
+          if (stored) {
+            try {
+              theme = JSON.parse(stored).data?.theme || null
+            } catch (e) {
+              theme = null
+            }
+          }
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          }
+          if (theme === 'dark') document.documentElement.classList.add('dark')
+        } catch (e) {
+          /* 存储不可用时按浅色渲染，运行时由 FR-12-d 兜底 */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+

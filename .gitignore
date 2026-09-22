@@ -39,3 +39,6 @@ Thumbs.db
 .sandbox-tmp/
 tmp/
 *.tmp
+
+# 本地代理工具资料
+.agentix/
