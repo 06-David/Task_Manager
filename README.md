@@ -67,8 +67,6 @@ npm run preview -- --host 127.0.0.1 --port 8081
 
 打开终端输出的网址。preview 仅用于本地预览，不是生产托管服务。上传源码到 GitHub 不会自动发布可访问的网站；如需 GitHub Pages，需要另行配置构建、部署及仓库子路径。
 
-截至 2026-09-22：7 个测试文件、95 项测试通过，lint 和 build 通过；核心浏览器交互已验证。测试范围和限制见 `./docs/04-测试设计.md`。
-
 ## 项目结构
 
 | 路径 | 内容 |
@@ -83,4 +81,3 @@ npm run preview -- --host 127.0.0.1 --port 8081
 | `./index.html` | Vite 页面入口 |
 | `./vite.config.js` | 构建、开发服务和测试配置 |
 | `./package.json`、`./package-lock.json` | 命令、依赖与锁定版本 |
-| `./课堂实践.pptx` | 原始课堂需求资料，不是运行依赖 |
