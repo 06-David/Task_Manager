@@ -84,7 +84,3 @@ npm run preview -- --host 127.0.0.1 --port 8081
 | `./vite.config.js` | 构建、开发服务和测试配置 |
 | `./package.json`、`./package-lock.json` | 命令、依赖与锁定版本 |
 | `./课堂实践.pptx` | 原始课堂需求资料，不是运行依赖 |
-
-## Git 提交范围
-
-提交源码、测试、文档、配置和依赖锁文件。`./node_modules/`、`./dist/`、缓存及本地工具资料由 `./.gitignore` 排除。其他人取得仓库后通过 npm ci 重建依赖，无需开发者的本机目录。
